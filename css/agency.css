@@ -236,10 +236,20 @@ header {
   text-align: center;
   color: white;
 }
-#map {
-  height: 100%
+    .google-maps {
+        position: relative;
+        padding-bottom: 40%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 
-}
 .image1 img{
   border-radius: 100%;
 }
@@ -592,7 +602,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  
+
   background-position: center;
   background-repeat: no-repeat;
 }
